@@ -41,6 +41,7 @@ projeto-javascript/
 │   ├── storage.js
 │   └── tarefas.js
 └── README.md
+```
 
 ## ▶️ Como executar
 
@@ -76,5 +77,5 @@ Exemplos:
 👨‍💻 Autor
 
 Marcelo Eduardo
-Meu perfil no [GitHub](https://github.com/eduardomarcelo628-beep)
-Meu perfil no [Linkedin](https://www.linkedin.com/in/marcelo-eduardo-a03978246/) 
+Meu [GitHub](https://github.com/eduardomarcelo628-beep)  
+Meu [LinkedIn](https://www.linkedin.com/in/marcelo-eduardo-a03978246/)
