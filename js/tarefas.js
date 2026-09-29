@@ -19,6 +19,10 @@ function criarItemTarefa(tarefa) {
     return item;
 }
 
+function atualizarContador() {
+    const contador = document.getElementById("contador-tarefas");
+    contador.textContent = `Tarefas: ${tarefas.length}`;
+}
 
 function renderizarLista() {
     const ul = document.getElementById("lista-tarefas");
@@ -32,6 +36,8 @@ function renderizarLista() {
     });
 
     ul.appendChild(fragmento);
+
+    atualizarContador();
 }
 
 
@@ -96,6 +102,7 @@ export function renderTarefas() {
     app.innerHTML = `
         <section>
             <h1>Minhas tarefas</h1>
+            <p id="contador-tarefas">Tarefas: 0</p>
 
             <form id="form-tarefa">
 
