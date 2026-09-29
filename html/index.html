@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List!</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="../imagens/logo_listadetarefas.png" alt="Logo do To-Do List!" width="60">
+        <nav>
+            <a href="#inicio" data-link>Ínicio</a>
+            <a href="#tarefas" data-link>Tarefas</a>
+            <a href="#sobre" data-link>Sobre</a>
+            <a href="#cadastro" data-link>Cadastro</a>
+        </nav>
+    </header>
+
+    <main id="app"></main>
+
+    <template id="tpl-tarefa">
+        <li class="tarefa">
+            <input type="checkbox" class="tarefa-check">
+            <span class="tarefa-titulo"></span>
+            <button type="button" class="tarefa-excluir">Excluir</button>
+        </li>
+    </template>
+
+    <footer>
+        <p>Experiência prática · Desenvolvimento Front-end</p>
+    </footer>
+
+    <script type="module" src="../js/app.js"></script>
+
+</body>
+</html>
