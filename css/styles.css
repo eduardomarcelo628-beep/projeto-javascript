@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: system-ui, sans-serif;
@@ -19,4 +21,11 @@ body {
 .cadastro-sucesso {
     color: green;
     font-weight: bold;
+}
+
+button:focus,
+a:focus,
+input:focus {
+    outline: 2px solid;
+    outline-offset: 2px;
 }
