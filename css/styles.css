@@ -2,10 +2,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-texto: #1a1a1a;
+    --cor-fundo: #f5f5f5;
+}
+
 body {
     font-family: system-ui, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
 .campo-erro {
@@ -28,4 +34,11 @@ a:focus,
 input:focus {
     outline: 2px solid;
     outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-texto: #ffffff;
+        --cor-fundo: #121212;
+    }
 }
