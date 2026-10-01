@@ -31,7 +31,7 @@ jobs:
         run: npm run build
 
       - name: Preparar artefato
-        run: cp dist/html/index.html dist/index.html
+        run: sed 's#\.\./assets/#./assets/#g' dist/html/index.html > dist/index.html
 
       - name: Publicar artefato
         uses: actions/upload-pages-artifact@v3
